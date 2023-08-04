@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<style>
+    #ui img {
+        width: 250px;
+        display: block;
+        margin: auto;
+    }
+
+    #ui {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #ui div {
+        padding: 22px;
+        margin: 35px 10px;
+        border: 2px solid rgb(42, 150, 183);
+        border-radius: 15px;
+    }
+   #ui div h2,h4{
+    color: antiquewhite;
+    padding: 5px;
+   }
+</style>
+<body>
+    <div class="box">
+       <div class="borderline"></div>
+       <form action="">
+        <h2> log in form</h2>
+        <div class="inputbox">
+            <input type="text" required="required" id="title">
+            <span>title</span>
+            <i></i>
+        </div>
+        <div class="inputbox">
+            <input type="url" required="required" id="img">
+            <span>image</span>
+            <i></i>
+        </div>
+        <div class="inputbox">
+            <input type="text" required="required" id="price">
+            <span>price</span>
+            <i></i>
+        </div>
+        <div class="inputbox">
+            <input type="text" required="required" id="category">
+            <span>category</span>
+            <i></i>
+        </div>
+        <input type="submit" value="login">
+       </form>
+      
+    </div>
+    <div id="btn">
+        <button id="lth">Low To High</button>
+        <button id="htl">High To Low</button>
+        <button id="scooter">scooter</button>
+        <button id="car">car</button>
+   </div>
+   <input type="text" id="value" placeholder="enter your category name">
+   <button id="search">search</button>
+    <div id="ui"></div>
+</body>
+<script src="index.js"></script>
+
+</html>
